@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Passion</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+       <div id="progressbar"> </div>
+       <div id="scrollpath"> </div>
+
+<section class="content">
+        <h2 style="color:pink;" >My</h2>
+        <h2>Passion</h2>
+        <h2><img class="yay" src="lub.png" alt="lub"></h2>
+        <h2>Is</h2>
+        <h2>To</h2>
+        <h2>Become</h2>
+        <h2>A</h2>
+        <img class="rock" src="https://media.giphy.com/media/VZLS6fmEmmRtPasBmA/giphy.gif" alt="rs">
+
+        <p>The only thing which makes my believe that existence on earth also has a magical sensation like on heaven</p>
+        <p>which is so called</p>
+        <h1>Music </h1>
+        <img class="mus" width="70px;" src="mus.png" alt="mus">
+
+        <p>~ Jenny Ryans</p>
+            <!-- https://www.youtube.com/watch?v=w5fCIhI0FyE&list=RDCMUCkjoHfkLEy7ZT4bA2myJ8xA&index=3 -->
+</section>
+
+<script type="text/javascript">
+     var progressbar=document.getElementById("progressbar");
+
+     var totalHeight= document.body.scrollHeight - window.innerHeight;
+     window.onscroll=function(){
+       var progress =(window.pageYOffset / totalHeight) * 67;
+       progressbar.style.height= progress + "%";
+                              }
+</script>
+
+  </body>
+</html>
