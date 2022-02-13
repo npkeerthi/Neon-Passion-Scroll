@@ -24,14 +24,36 @@
   width: 200px;
 }
 
-.yay:hover{
+/* .yay:hover{
   -webkit-transform:scaleX(-1);
   transform: scaleX(-1);
-}
+} */
 
 .rock:hover{
   filter: brightness(250%);
 }
+
+@keyframes cmon {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
+.threed{
+  animation-name: cmon;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+
+
+
+
+
 
 ::-webkit-scrollbar{
   width: 0;
