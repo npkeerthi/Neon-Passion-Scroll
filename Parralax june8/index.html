@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Parallax 🌙</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+    <a href="#" class="logo" > <img src="  https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/lg/307/comet_2604-fe0f.png  " alt=""></a>
+
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mount_behind.png" id="mb">
+    <h2 id="text">Moon Fantasy</h2>
+    <a href="#" id="btn">Explore</a>
+    <img src="mount_front.png" id="mf" >
+  </section>
+  <div class="sec" id="sec">
+    <h2>Parallax Scroll Effect</h2>
+    <br>
+    <p>The moon shines and makes our world bright at night. But besides illuminating our nights, the moon can be a great motivator with many life lessons for us.
+      The moon is full of imperfections but it’s still beautiful and a pleasure to watch. It has beauty and elegance without reason. Like the moon, we should be calm and reflect beauty despite being imperfect in appearance. We should shine in the darkness of life and give way to the path of light.
+
+    <br><br>
+
+        We are all like the bright moon; we still have our darker side.
+        When you hear romantic music, it makes you want to take your girl out to dinner or buy her something or take her out in the moonlight or take her on a walk.
+        The moon is the reflection of your heart and moonlight is the twinkle of your love.
+        I have now seen this temple of the modern world imperfectly; I have seen it only by moonlight.
+        Somewhere out there, beneath the pale moonlight, someone's thinking of me.
+        A fine building should be seen by morning light, at noon and by moonlight.
+    <br><br>
+      The moon goes through phases much like we do. Like it, we should embrace the changes in our lives without fearing what differences they might bring.
+      Strive to achieve every possible success but do not bask in your glories for long. Just like the moon wanes, you should be open to shedding your past so you can pick yourself up to scale a new peak.
+
+      </p>
+  </div>
+
+  <script type="text/javascript">
+    let stars= document.getElementById('stars');
+    let moon= document.getElementById('moon');
+    let mount_behind= document.getElementById('mb');
+    let text=document.getElementById('text');
+    let btn=document.getElementById('btn');
+    let mount_front= document.getElementById('mf');
+    let header= document.querySelector('header');
+
+    window.addEventListener('scroll',function(){
+      let val =  window.scrollY;
+      stars.style.left = val*0.25 + 'px';
+      moon.style.top = val*1.05 +'px';
+      mount_behind.style.top= val*0.5 +'px';
+      mount_front.style.top= val*0 +'px';
+      text.style.marginRight= val*4 +'px';
+      text.style.marginTop= val*1.5 +'px';
+      btn.style.marginTop= val*1.5 +'px';
+      header.style.top= val*0.5 +'px';
+
+    })
+
+  </script>
+  </body>
+</html>
